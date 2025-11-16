@@ -292,3 +292,7 @@ footer a:hover,
 footer a:focus-visible {
   background: rgba(199, 214, 232, 0.18);
 }
+
+@view-transition {
+  navigation: auto;
+}
