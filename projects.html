@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <header>
         <h1>Hi, I am Jialin Zhang.</h1>
         <details class="menu" open>
@@ -29,46 +30,10 @@
     <main>
         <section>
             <h2>Project list</h2>
-            <article>
-                <figure>
-                    <picture>
-                        <img src="images/concert.jpg" alt="Concert Ticketing System" loading="lazy" decoding="async" />
-                    </picture>
-                    <figcaption>Concert Ticketing System</figcaption>
-                </figure>
-                <header>
-                    <h3>Concert Ticketing System</h3>
-                </header>
-                <p>
-                    A full-stack web app for concert seat reservation built with Spring Boot, MySQL, and Redis.
-                    It supports real-time seat locking and automatic rollback through message queues, ensuring atomic
-                    transactions and
-                    smooth high-concurrency booking experience.
-                </p>
-            </article>
-
-
-            <article>
-                <figure>
-                    <picture>
-                        <img src="images/ros2-gif.gif" alt="AprilTag-based robot localization" loading="lazy"
-                            decoding="async" />
-                    </picture>
-                    <figcaption>AprilTag-Based Robot Localization</figcaption>
-                </figure>
-                <header>
-                    <h3>AprilTag-Based Robot Localization</h3>
-                </header>
-                <p>
-                    A ROS2 project implementing visual servoing and position estimation with AprilTags.
-                    Combined camera calibration, Kalman filtering, and differential-drive kinematics to achieve robust
-                    real-time pose tracking
-                    under noisy visual measurements.
-                </p>
-            </article>
-
+            <project-grid id="project-grid" class="project-grid"></project-grid>
         </section>
     </main>
+
 
     <footer>
         <ul>
@@ -77,6 +42,8 @@
             <li><a href="mailto:jiz282@ucsd.edu">Email</a></li>
         </ul>
     </footer>
+    <script src="/js/project-card.js"></script>
+    <script src="/js/projects.js"></script>
 </body>
 
 </html>

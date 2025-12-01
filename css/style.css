@@ -296,3 +296,14 @@ footer a:focus-visible {
 @view-transition {
   navigation: auto;
 }
+
+project-grid {
+  display: flex;
+  gap: 16px;
+
+}
+
+project-card {
+  display: block;
+  width: 530px;
+}
