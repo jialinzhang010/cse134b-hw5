@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Projects</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Manage Projects (localStorage)</h1>
+        <details class="menu" open>
+            <summary>Menu</summary>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="travelling.html">Travelling</a></li>
+                    <li><a href="manage-projects.html">Manage projects</a></li>
+                    <li><a href="form-with-js.html">Contact me</a></li>
+                </ul>
+            </nav>
+        </details>
+    </header>
+
+    <main>
+        <section>
+            <h2>Current Projects (from localStorage)</h2>
+            <ul id="project-list"></ul>
+        </section>
+
+        <section>
+            <h2>Edit / Create Project</h2>
+            <form id="project-form">
+                <label>
+                    Title (used as key for update/delete):
+                    <input type="text" id="title" required />
+                </label>
+                <br />
+
+                <label>
+                    Caption:
+                    <input type="text" id="caption" />
+                </label>
+                <br />
+
+                <label>
+                    Image URL:
+                    <input type="text" id="image" />
+                </label>
+                <br />
+
+                <label>
+                    Alt text:
+                    <input type="text" id="alt" />
+                </label>
+                <br />
+
+                <label>
+                    Description:
+                    <textarea id="description" rows="3"></textarea>
+                </label>
+                <br />
+
+                <label>
+                    Link:
+                    <input type="url" id="link" />
+                </label>
+                <br /><br />
+
+                <button type="button" id="create-btn">Create</button>
+                <button type="button" id="update-btn">Update</button>
+                <button type="button" id="delete-btn">Delete</button>
+            </form>
+
+            <p id="status-message"></p>
+        </section>
+    </main>
+
+    <script src="/js/manage-projects.js"></script>
+</body>
+
+</html>
