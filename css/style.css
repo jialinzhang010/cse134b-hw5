@@ -261,6 +261,8 @@ section article img {
   border-radius: var(--radius, 12px);
   overflow: hidden;
   outline: none;
+  aspect-ratio: 4 / 3;
+  min-height: 220px;
 }
 
 .flip-card:focus-visible {
@@ -285,6 +287,8 @@ section article img {
   inset: 0;
   backface-visibility: hidden;
   border-radius: inherit;
+  width: 100%;
+  height: 100%;
 }
 
 .flip-card figcaption {
