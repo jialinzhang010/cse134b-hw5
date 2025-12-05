@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     form.addEventListener('submit', (e) => {
+        form.classList.add('was-validated');
         if (!form.checkValidity()) {
             e.preventDefault();
             const firstInvalid = form.querySelector(':invalid');

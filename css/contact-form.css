@@ -87,14 +87,14 @@ textarea:required {
     border-left-style: solid;
 }
 
-input:invalid,
-textarea:invalid {
+.was-validated input:invalid,
+.was-validated textarea:invalid {
     border-color: var(--error);
     border-left-color: var(--error);
 }
 
-input:valid,
-textarea:valid {
+.was-validated input:valid,
+.was-validated textarea:valid {
     border-color: var(--success);
     border-left-color: var(--success);
 }
