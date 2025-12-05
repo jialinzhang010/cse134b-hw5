@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <title>Contact Form (With JS)</title>
     <link rel="stylesheet" href="css/contact-form.css">
+    <script src="js/theme-toggle.js" defer></script>
     <script src="js/form-with-js.js" defer></script>
 </head>
 
 <body>
-    <header id="site-header"></header>
-    <section class="form-actions">
+    <header class="site-header">
         <button id="home-button" type="button" onclick="location.href='index.html'">Home</button>
-        <button id="theme-toggle" type="button">Toggle theme</button>
+        <theme-toggle></theme-toggle>
         <noscript>
             <p class="no-js-note">Theme toggle requires JavaScript.</p>
         </noscript>
-    </section>
+    </header>
     <form id="contact-form" action="https://httpbin.org/post" method="post" novalidate>
         <h1>Contact Me</h1>
 
@@ -39,28 +39,6 @@
 
         <button type="submit">Send</button>
     </form>
-    <footer id="site-footer"></footer>
-    <script src="js/layout.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const btn = document.getElementById("theme-toggle");
-            if (!btn) return;
-
-            btn.style.display = "inline-block";
-
-            const stored = localStorage.getItem("theme");
-            if (stored === "dark" || stored === "light") {
-                document.documentElement.setAttribute("data-theme", stored);
-            }
-
-            btn.addEventListener("click", function () {
-                const current = document.documentElement.getAttribute("data-theme");
-                const next = current === "dark" ? "light" : "dark";
-                document.documentElement.setAttribute("data-theme", next);
-                localStorage.setItem("theme", next);
-            });
-        });
-    </script>
 </body>
 
 </html>
