@@ -9,13 +9,14 @@
 </head>
 
 <body>
-    <header class="site-header">
+    <header id="site-header"></header>
+    <section class="form-actions">
         <button id="home-button" type="button" onclick="location.href='index.html'">Home</button>
         <button id="theme-toggle" type="button">Toggle theme</button>
         <noscript>
             <p class="no-js-note">Theme toggle requires JavaScript.</p>
         </noscript>
-    </header>
+    </section>
     <form id="contact-form" action="https://httpbin.org/post" method="post" novalidate>
         <h1>Contact Me</h1>
 
@@ -38,6 +39,8 @@
 
         <button type="submit">Send</button>
     </form>
+    <footer id="site-footer"></footer>
+    <script src="js/layout.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const btn = document.getElementById("theme-toggle");
