@@ -43,6 +43,31 @@ main> :only-child {
   }
 }
 
+.manage-page main {
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: 1.4rem;
+}
+
+@media (min-width: 52rem) {
+  .manage-page main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.manage-page main>h1 {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.manage-page main>section {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius, 12px);
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
 header {
   width: min(93dvw, 69rem);
   margin: 0 auto;
@@ -429,6 +454,13 @@ project-card {
   font-size: 0.95rem;
   cursor: pointer;
   margin-right: 0.4rem;
+}
+
+.manage-page .form-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.2rem;
 }
 
 #create-btn {

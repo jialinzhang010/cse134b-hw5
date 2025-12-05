@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="manage-page">
 
     <header id="site-header"></header>
 
@@ -26,41 +26,36 @@
                     Title (used as key for update/delete):
                     <input type="text" id="title" required />
                 </label>
-                <br />
 
                 <label>
                     Caption:
                     <input type="text" id="caption" />
                 </label>
-                <br />
 
                 <label>
                     Image URL:
                     <input type="text" id="image" />
                 </label>
-                <br />
 
                 <label>
                     Alt text:
                     <input type="text" id="alt" />
                 </label>
-                <br />
 
                 <label>
                     Description:
                     <textarea id="description" rows="3"></textarea>
                 </label>
-                <br />
 
                 <label>
                     Link:
                     <input type="url" id="link" />
                 </label>
-                <br /><br />
-
-                <button type="button" id="create-btn">Create</button>
-                <button type="button" id="update-btn">Update</button>
-                <button type="button" id="delete-btn">Delete</button>
+                <div class="form-actions">
+                    <button type="button" id="create-btn">Create</button>
+                    <button type="button" id="update-btn">Update</button>
+                    <button type="button" id="delete-btn">Delete</button>
+                </div>
             </form>
 
             <p id="status-message"></p>
